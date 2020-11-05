@@ -116,13 +116,13 @@ namespace DevFactoryZ.Web.api
 
         //ПРИМЕР РЕАЛИЗАЦИИ DELETE
         // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-            var subject = db.Set<Subject>().Single(x => x.Id == id);
-            db.Remove(subject);
-            db.SaveChanges();
-        }
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //    var subject = db.Set<Subject>().Single(x => x.Id == id);
+        //    db.Remove(subject);
+        //    db.SaveChanges();
+        //}
     }
 }
 }
